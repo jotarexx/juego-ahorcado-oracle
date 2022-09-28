@@ -1,7 +1,7 @@
 # juego-ahorcado-oracle
 Creación del juego del ahorcado | HTML - CSS - JAVASCRIPT
 
-Jugar: https://www.jotarexx.github.io/juego-ahorcado-oracle/
+Jugar: https://jotarexx.github.io/juego-ahorcado-oracle/
 
 Segundo challenge de Oracle Next Education y Alura
 
