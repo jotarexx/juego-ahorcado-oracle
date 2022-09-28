@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/game.css" />
+  <link rel="stylesheet" href="styles/words.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body>
+  <div id="pagina-inicial">
+    <header id="header-inicial">
+      <img src="img/logo.png" alt="logo" id="img-logo" />
+    </header>
+    <main id="main-inicial">
+      <div id="div-btn">
+        <button id="btn-iniciar" class="btn-inicio">Iniciar Juego</button>
+        <button id="btn-palabra" class="btn-pala">Agregar nueva palabra</button>
+      </div>
+    </main>
+    <footer>
+      <p id="creador">Diseñado por Javier Briantz</p>
+    </footer>
+  </div>
+   <div id="pagina-juego">
+    <header id="header-juego">
+      <img src="img/logo.png" alt="logo" id="img-logo" />
+    </header>
+
+    <main id="main-juego">
+      <section id="section-juego">
+        <section id="ahorcado">
+          <canvas id="canvas"></canvas>
+          <div class="mensaje"></div>
+        </section>
+
+        <section id="palabra">
+        </section>
+        <section id="letras-error"></section>
+      </section>
+      <section id="teclado">
+        <div class="fila">
+          <button class="keys" id="Q" value="Q" onclick="teclaMobil('#Q')">Q</button>
+          <button class="keys" id="W" value="W" onclick="teclaMobil('#W')">W</button>
+          <button class="keys" id="E" value="E" onclick="teclaMobil('#E')">E</button>
+          <button class="keys" id="R" value="R" onclick="teclaMobil('#R')">R</button>
+          <button class="keys" id="T" value="T" onclick="teclaMobil('#T')">T</button>
+          <button class="keys" id="Y" value="Y" onclick="teclaMobil('#Y')">Y</button>
+          <button class="keys" id="U" value="U" onclick="teclaMobil('#U')">U</button>
+          <button class="keys" id="I" value="I" onclick="teclaMobil('#I')">I</button>
+          <button class="keys" id="O" value="O" onclick="teclaMobil('#O')">O</button>
+          <button class="keys" id="P" value="P" onclick="teclaMobil('#P')">P</button>
+        </div>
+
+        <div class="fila">
+          <button class="keys" id="A" value="A" onclick="teclaMobil('#A')">A</button>
+          <button class="keys" id="S" value="S" onclick="teclaMobil('#S')">S</button>
+          <button class="keys" id="D" value="D" onclick="teclaMobil('#D')">D</button>
+          <button class="keys" id="F" value="F" onclick="teclaMobil('#F')">F</button>
+          <button class="keys" id="G" value="G" onclick="teclaMobil('#G')">G</button>
+          <button class="keys" id="H" value="H" onclick="teclaMobil('#H')">H</button>
+          <button class="keys" id="J" value="J" onclick="teclaMobil('#J')">J</button>
+          <button class="keys" id="K" value="K" onclick="teclaMobil('#K')">K</button>
+          <button class="keys" id="L" value="L" onclick="teclaMobil('#L')">L</button>
+          <button class="keys" id="Ñ" value="Ñ" onclick="teclaMobil('#Ñ')">Ñ</button>
+        </div>
+
+        <div class="fila">
+          <button class="keys" id="Z" value="Z" onclick="teclaMobil('#Z')">Z</button>
+          <button class="keys" id="X" value="X" onclick="teclaMobil('#X')">X</button>
+          <button class="keys" id="C" value="C" onclick="teclaMobil('#C')">C</button>
+          <button class="keys" id="V" value="V" onclick="teclaMobil('#V')">V</button>
+          <button class="keys" id="B" value="B" onclick="teclaMobil('#B')">B</button>
+          <button class="keys" id="N" value="N" onclick="teclaMobil('#N')">N</button>
+          <button class="keys" id="M" value="M" onclick="teclaMobil('#M')">M</button>
+        </div>
+
+      </section>
+
+      <section id="section-btn-juego">
+        <button id="btn-nuevo" class="btn-juego">Nuevo Juego</button>
+
+        <button id="btn-desistir" class="btn-juego">Salir</button>
+      </section>
+    </main>
+  </div>
+
+  <div id="pagina-ingreso-palabra">
+    <header id="header-palabra">
+      <img src="img/logo.png" alt="logo" id="img-logo" />
+    </header>
+    <main id="main-palabra">
+      <section id="section-input">
+        <input type="text" id="ingresar-palabra" placeholder="Ingrese una palabra" maxlength="8" />
+      </section>
+      <p id="mensaje"><img src="img/icon.png" />Max. de 8 letras</p>
+      <section id="section-btn">
+        <button id="btn-guardar" class="btn">Guardar y empezar</button>
+
+        <button id="btn-cancelar" class="btn">Cancelar</button>
+      </section>
+    </main>
+    <footer>
+      <p id="creador">Diseñado por Javier Briantz</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
